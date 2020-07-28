@@ -1,0 +1,13 @@
+<ion-view class="pane">
+  <ion-header-bar align-title="center" class="bar bar-positive" xattr-theme="bar-positive" data-component="crn-ion-header-bar">
+    <div class="buttons buttons-left header-item">
+      <button class="button button-clear" menu-toggle="left" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+    </div>
+    <h1 class="title">Meu Local</h1>
+    <div class="buttons buttons-right header-item">
+      <button class="button button-clear" menu-toggle="right" data-component="crn-button" xattr-type="button-clear"> <i class="icon ion-navicon"></i> </button>
+    </div>
+  </ion-header-bar>
+  <ion-content data-component="crn-ion-content" class="scroll-content has-header">
+  <div class="item item-input component-holder" data-component="crn-input" id="crn-input-694328"><input aria-label="Aria Label Text" id="partida" type="text" placeholder="Partida" ng-model="vars.inputPartida" mask="" keyboard=""></div><div class="item item-input component-holder" data-component="crn-input" id="crn-input-longitude"><input aria-label="Aria Label Text" id="destino" type="text" placeholder="Destino" ng-model="vars.inputDestino" mask="" keyboard=""></div><button class="button button-block button-positive component-holder" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="cronapi.client('js.blockly.ObterGeo.GerarRota').run()" data-component="crn-button" id="crn-button-749681"><i class="ion ion-ios-location"></i> <span>Gerar Rota</span></button><button class="button button-block button-positive component-holder" type="submit" xattr-fullsize="button-block" xattr-theme="button-positive" ng-click="cronapi.client('js.blockly.ObterGeo.AdicionarMarcador').run()" data-component="crn-button" id="crn-button-113029"><i class="ion ion-android-bookmark"></i> <span>Adicionar Marcador</span></button><div class="component-holder ng-binding ng-scope" data-component="crn-google-maps" id="crn-google-maps-646233"><div id="map7261" token="AIzaSyB97SCemXK_YWJyLMKIYq2f4G2DuBNJw2U" style="height: 400px;" class=""></div></div></ion-content>
+</ion-view>
